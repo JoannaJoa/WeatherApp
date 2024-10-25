@@ -1,0 +1,64 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>My Weather Application</title>
+  </head>
+  <body>
+<div class="background-animation">
+</div>
+     <div class="container-border-style">
+      <header>
+      <div class="weather-app">
+      <header>
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-input"
+            id="search-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+           <div class="weather-info"></div>
+  <div>
+    <h1 class="current-city" id="current-city">Paris</h1>
+    <ul class="current-details">
+      <li id="current-date"></li>
+      <li>Precipitation: <strong> 1%</strong></li>
+      <li>Humidity: <strong>87%</strong></li>
+      <li>Wind: <strong>7.2km/h</strong></li>
+    </ul>
+  </div>
+  <div class="current-temperature">
+    <span class="current-temperature-icon">☀️</span>
+    <span class="current-temperature-value" id="current-temp">24</span>
+    <span class="current-temperature-unit">°C</span>
+  </div>
+</div>
+        </div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="#" target="_blank">Joanna</a> and is
+          <a href="#" target="_blank"> on GitHub</a> and
+          <a href="#" target="_blank"> hosted on Netlify</a>
+        </p>
+      </footer>
+    </div>
+    <script src="javascript/homework.js"></script>
+  </body>
+</html>
